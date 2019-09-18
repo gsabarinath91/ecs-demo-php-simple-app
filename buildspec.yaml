@@ -16,4 +16,5 @@
                 - docker push "$IMAGE_URI"
                 - printf '[{"name":"simple-app","imageUri":"%s"}]' "$IMAGE_URI" > images.json
           artifacts:
-            files: /imageDetail.json
+            files: 
+                - imageDetail.json
